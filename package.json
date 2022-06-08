@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "primeflex": "^3.2.1",
+    "primeicons": "^5.0.0",
+    "primevue": "^3.13.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -18,7 +21,13 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "less": "^4.1.2",
+    "less-loader": "^11.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0",
+    "stylus": "^0.58.1",
+    "stylus-loader": "^7.0.0"
   },
   "eslintConfig": {
     "root": true,

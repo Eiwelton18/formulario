@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <formulario> </formulario>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Formulario from "./main/Formulario.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { Formulario },
+  mounted() {
+    this.$toast.add({
+      severity: "success",
+      summary: "Success Message",
+      detail: "Order submitted",
+      life: 3000,
+    });
+  },
+};
 </script>
 
 <style>
@@ -19,7 +26,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  align-items: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
 }
